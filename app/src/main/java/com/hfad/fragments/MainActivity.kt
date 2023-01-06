@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
                 secondFragmentManager.beginTransaction()
             val secondFragment = SecondFragment()
             secondFragmentTransaction.replace(R.id.frame,secondFragment)
+            secondFragmentTransaction.addToBackStack(null)
             secondFragmentTransaction.commit()
 
         }
